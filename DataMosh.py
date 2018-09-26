@@ -29,8 +29,8 @@ for frame in frames:
             outFile.write(frame + '\x00\xdc')
             frameCount += 1
         else:
-                outFile.write(os.urandom(len(frame)) + '\x00\xdc')
-                frameCount = 0
+            outFile.write(os.urandom(len(frame)) + '\x00\xdc')
+            frameCount = 0
 
 outFile.close()
 
